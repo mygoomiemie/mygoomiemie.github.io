@@ -4,41 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joohee's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Pretendard', sans-serif;
-      background: linear-gradient(135deg, #fefefe, #f0f0f0);
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
       color: #333;
+      padding: 60px 20px;
       text-align: center;
-      padding: 100px 20px;
+    }
+    header {
+      margin-bottom: 40px;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 10px;
+      color: #1e90ff;
     }
     p {
       font-size: 1.2em;
-      color: #666;
+      margin-top: 15px;
+      color: #555;
     }
     .btn {
-      margin-top: 30px;
+      display: inline-block;
+      margin-top: 40px;
       padding: 15px 30px;
-      background-color: #4f46e5;
+      background-color: #1e90ff;
       color: white;
-      border: none;
+      text-decoration: none;
       border-radius: 8px;
       font-size: 1em;
-      cursor: pointer;
       transition: background-color 0.3s;
     }
     .btn:hover {
-      background-color: #3730a3;
+      background-color: #006ad1;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>👋 Hello, I'm Joohee</h1>
-  <p>작지만 확실한 성장의 기록을 담는 공간입니다.</p>
-  <button class="btn" onclick="window.location.href='https://github.com/your-username'">내 GitHub 보러가기</button>
+  <header>
+    <h1>Hello, I'm Joohee 👋</h1>
+    <p>프론트엔드 개발을 배우고 있는 개발자입니다.<br>이곳은 저의 첫 GitHub 포트폴리오 사이트입니다.</p>
+    <a class="btn" href="https://github.com/mygoomiemie" target="_blank">🔗 내 GitHub 보러가기</a>
+  </header>
+
+  <footer>
+    &copy; 2025 Joohee. All rights reserved.
+  </footer>
 </body>
 </html>
