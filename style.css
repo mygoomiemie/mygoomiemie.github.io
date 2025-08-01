@@ -3,80 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background: #f9fafb;
+body, html {
+  height: 100%;
   font-family: 'Outfit', sans-serif;
-  color: #1f2937;
-  line-height: 1.6;
-  font-size: 16px;
 }
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.hero {
+.header {
+  background: #1e3a8a;
+  color: white;
+  padding: 20px;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 60px;
 }
-.hero-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #111827;
+.content {
+  display: flex;
+  flex: 1;
+  background: #f1f5f9;
 }
-.hero-subtitle {
-  font-size: 1.2rem;
-  color: #6b7280;
-  margin: 16px 0;
+.sidebar {
+  width: 220px;
+  background: #1e40af;
+  color: white;
+  padding: 30px 20px;
 }
-.btn-primary {
-  display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.2);
-  transition: background 0.3s ease;
-}
-.btn-primary:hover {
-  background: linear-gradient(135deg, #2563eb, #4f46e5);
-}
-.card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 30px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-.card h2 {
-  font-size: 1.4rem;
-  color: #111827;
-  margin-bottom: 10px;
-}
-.card p, .project-list {
-  color: #374151;
-}
-.project-list {
+.sidebar ul {
   list-style: none;
-  padding-left: 0;
 }
-.project-list li {
-  margin-top: 8px;
-  padding-left: 1em;
-  position: relative;
+.sidebar li {
+  margin-bottom: 20px;
 }
-.project-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #3b82f6;
-  font-size: 1.2em;
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-footer {
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.main {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+}
+.footer {
+  background: #111827;
+  color: #94a3b8;
   text-align: center;
-  margin-top: 60px;
+  padding: 16px;
   font-size: 0.9rem;
-  color: #9ca3af;
+  position: sticky;
+  bottom: 0;
 }
