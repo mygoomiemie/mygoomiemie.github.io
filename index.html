@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joohee’s Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #2563eb;
+    }
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #4b5563;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: left;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #374151;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm Joohee 👋</h1>
+    <p>프론트엔드 개발자를 꿈꾸는 창의적인 개발자</p>
+  </header>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>안녕하세요! 코딩을 배우고 있는 주희입니다.  
+    깔끔한 UI/UX를 사랑하며, 디자인 감각과 기능적 코드를 연결하는 것을 즐깁니다.  
+    이 포트폴리오는 저의 첫 번째 웹사이트입니다 ✨</p>
+  </div>
+
+  <div class="card">
+    <h2>Projects</h2>
+    <p>📌 아직 많은 프로젝트가 올라오진 않았지만,  
+    앞으로 JS, React, GitHub Actions 등을 활용한 재미있는 것들을 추가할 예정입니다!</p>
+  </div>
+
+  <a class="btn" href="https://github.com/mygoomiemie" target="_blank">🔗 GitHub 바로가기</a>
+
+  <footer>
+    &copy; 2025 Joohee’s Portfolio. All rights reserved.
+  </footer>
+
+</body>
+</html>
